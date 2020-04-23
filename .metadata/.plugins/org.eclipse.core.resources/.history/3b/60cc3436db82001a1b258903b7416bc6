@@ -1,0 +1,41 @@
+package basic;
+class DigitThread extends Thread{
+	public void run() {
+		for (int i = 1; i <= 100; i++) {
+			System.out.println(i);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+class AlphaThread extends Thread{
+	public void run() {
+		while(true) {
+			char alpha = 65;
+			String str = String.valueOf(alpha);
+			System.out.println(str);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			alpha++;
+			if(alpha > 90) {
+				break;
+			}
+		}
+	}
+}
+public class ThreadExam01 {
+	public static void main(String[] args) {
+		System.out.println("Thread ~");
+		DigitThread d = new DigitThread();
+		AlphaThread a = new AlphaThread();
+		d.start();
+		a.start();
+	}
+
+}

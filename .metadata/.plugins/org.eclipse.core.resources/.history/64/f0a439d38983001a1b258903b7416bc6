@@ -1,0 +1,6 @@
+package sync;
+
+public class SharedObj {
+	Account aac1; //Çöºó°èÁÂ
+	Account aac2; //±è¼­¿¬°èÁÂ
+}

@@ -1,0 +1,14 @@
+package sync;
+
+public class SharedObj {
+	Account acc1; //Çöºó°èÁÂ
+	Account acc2; //±è¼­¿¬°èÁÂ
+	
+	public synchronized void sum(String name, String account) {
+		for (int i = 0; i < 5; i++) {
+			System.out.println(acc1.getOwnerName()+"ÀÜ¾× : "+acc1.getAccId());
+			System.out.println(acc2.getOwnerName()+"ÀÜ¾× : "+acc2.getAccId());
+			System.out.println(acc1.getBalance()+acc2.getBalance());
+		}
+	}
+}

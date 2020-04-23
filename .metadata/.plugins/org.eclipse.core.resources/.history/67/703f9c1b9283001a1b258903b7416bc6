@@ -1,0 +1,15 @@
+package sync;
+
+public class AccountSum extends Thread{
+	String name;
+	String account;
+	SharedObj obj;
+	public AccountSum(SharedObj obj) {
+		super();
+		this.obj = obj;
+	}
+
+	public void run() {
+		obj.sum(name, account);
+	}
+}

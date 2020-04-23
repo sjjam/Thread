@@ -1,0 +1,23 @@
+package sync;
+
+public class AccountSum extends Thread{
+	String name;
+	String account;
+	SharedObj obj;
+	public AccountSum(String name, String account, SharedObj obj) {
+		super();
+		this.name = name;
+		this.account = account;
+		this.obj = obj;
+	}
+	public synchronized void sum(String name, String account) {
+		for (int i = 0; i < 5; i++) {
+			System.out.println(obj.acc1.getOwnerName()+"ภÜพื : "+obj.acc1.getAccId());
+			System.out.println(obj.acc2.getOwnerName()+"ภÜพื : "+obj.acc2.getAccId());
+			System.out.println(obj.acc1.getBalance()+obj.acc2.getBalance());
+		}
+	}
+	public void run() {
+		sum(name, account);
+	}
+}

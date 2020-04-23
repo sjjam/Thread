@@ -1,0 +1,21 @@
+package sync;
+
+public class AccountSend extends Thread{
+	String name;
+	String account;
+	SharedObj obj;
+	public AccountSend(SharedObj obj) {
+		super();
+		this.obj = obj;
+	}
+	public  void send() {
+		for (int i = 0; i < 20; i++) {
+			obj.acc1.withdraw(100);
+			obj.acc2.deposit(100);
+			System.out.println(obj.acc1.getBalance()+"-------"+obj.acc2.getBalance());
+		}
+	}
+	public void run() {
+		send();
+	}
+}

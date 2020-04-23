@@ -1,0 +1,17 @@
+package sync;
+
+public class AccountSum extends Thread{
+	String name;
+	Account account;
+	public AccountSum(String name, Account account) {
+		super();
+		this.name = name;
+		this.account = account;
+	}
+	public void run() {
+		account.getBalance();
+		for (int i = 0; i < 5; i++) {
+			System.out.println(account.getBalance());
+		}
+	}
+}

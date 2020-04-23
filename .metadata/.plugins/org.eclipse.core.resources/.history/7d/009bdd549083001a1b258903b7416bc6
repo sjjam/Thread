@@ -1,0 +1,12 @@
+package sync;
+
+public class AccountSum extends Thread{
+	Account account;
+	public AccountSum(Account account) {
+		super();
+		this.account = account;
+	}
+	public void run() {
+		account.getBalance();
+	}
+}

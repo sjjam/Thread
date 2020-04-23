@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="basic.ThreadDemo1"/>
+<fullyQualifiedTypeName name="basic.DigitThread"/>
+<fullyQualifiedTypeName name="basic.AlphaThread"/>
+<fullyQualifiedTypeName name="basic.DigitThread2"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="basic.StopThread02"/>
+<fullyQualifiedTypeName name="sync.Toilet"/>
+<fullyQualifiedTypeName name="sync.User"/>
+<fullyQualifiedTypeName name="sync.Account"/>
+<fullyQualifiedTypeName name="sync.AccountSum"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="sync.AccountSend"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="sync.SharedObj"/>
+<fullyQualifiedTypeName name="sync.SumPrintThread"/>
+<fullyQualifiedTypeName name="sync.TransferThread"/>
+</qualifiedTypeNameHistroy>
